@@ -22,7 +22,7 @@ pipeline {
         }
         stage('Deploy') {
             steps {
-                sh 'docker run -d --name eureka --network -p 8761:8761 gentledog eureka'
+                sh 'docker run -d --name eureka --network gentledog -p 8761:8761 eureka'
             }
         }
     }
