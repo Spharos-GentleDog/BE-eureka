@@ -1,0 +1,12 @@
+server:
+  port: ${EUREKA_PORT}
+
+spring:
+  config:
+    activate:
+      on-profile: prod
+
+eureka:
+  client: # 유레카 서버로 쓸 것이기 때문에, false로 설정
+    register-with-eureka: false
+    fetch-registry: false
