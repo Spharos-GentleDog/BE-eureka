@@ -1,5 +1,5 @@
 server:
-  port: ${EUREKA_PORT}
+  port: 0
 
 spring:
   config:
